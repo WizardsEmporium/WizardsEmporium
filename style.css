@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=Multi");
+
+body {
+	font-family: 'Multi';
+	background: #0d004c url(images/black-linen-2.png);
+}
+
+h1, h2, h3 {
+	font-family: 'Nixie One';
+	color: #9f5827;
+	font-weight: bold;
+	margin: .2em;
+}
+
+#container {
+	display: table;
+	min-width:600px;
+	height: 100%;
+	margin: auto;
+}
+
+#main {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#content
+{
+    padding: 1em; 
+	border-radius: 25px;
+	background: #FFF url(images/content-bg.jpg);
+	text-align: center;
+}
+
+@media handheld, screen and (max-width: 800px) {
+	#container {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+@media handheld, screen and (max-width: 600px) {
+	body {
+		margin: 0 0;
+		padding: auto 0;
+	}
+	
+	#container {
+		border-radius: 0;
+	}
+	
+	.contentbox {
+		margin: auto;
+	}
+}
+
+@media handheld, screen and (max-width: 450px) {
+	
+	.contentbox {
+		padding: .5em;
+	}
+}
