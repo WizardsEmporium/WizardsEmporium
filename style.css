@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Nixie+One");
+@import url("https://fonts.googleapis.com/css?family=Spectral");
 
 body {
 	background: #630460 url(images/black-linen-2.png);
 }
 
 h1, h2, h3 {
-	font-family: 'Nixie One';
+	font-family: 'Spectral';
 	color: #9f5827;
 	font-weight: bold;
 	margin: .2em;
@@ -13,7 +13,6 @@ h1, h2, h3 {
 
 #container {
 	display: table;
-	min-width:600px;
 	height: 100%;
 	margin: auto;
 }
@@ -23,39 +22,27 @@ h1, h2, h3 {
 	vertical-align: middle;
 }
 
-#content
-{
+#content {
     padding: 1em; 
 	border-radius: 25px;
-	background: #FFF;
+	background: #FFF url(images/blizzard.png);
 	text-align: center;
 }
 
-@media handheld, screen and (max-width: 800px) {
-	#container {
-		width: 100%;
-		margin: 0;
-	}
+#mobile {
+	display: none;
 }
 
-@media handheld, screen and (max-width: 600px) {
-	body {
-		margin: 0 0;
-		padding: auto 0;
+@media handheld, screen and (max-width: 500px) {
+	#main {
+		width:"90%";
 	}
 	
-	#container {
-		border-radius: 0;
+	#logo {
+		display: none;
 	}
 	
-	.contentbox {
-		margin: auto;
-	}
-}
-
-@media handheld, screen and (max-width: 450px) {
-	
-	.contentbox {
-		padding: .5em;
+	#mobile {
+		display: inline-block;
 	}
 }
